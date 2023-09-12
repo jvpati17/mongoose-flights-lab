@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs') %>
+
+<h3>Select Preferred Flight Credentials</h3>
+<form method="POST" action="/flights">
+    <label>Airline</label>
+<select name="airline">
+    <option value="American">American</option>
+    <option value="Southwest">Southwest</option>
+    <option value="United">United</option>
+</select>
+<label>Airport</label>
+<select name="airport">
+    <option value="AUS">AUS</option>
+    <option value="DFW">DFW</option>
+    <option value="DEN">DEN</option>
+    <option value="LAX">LAX</option>
+    <option value="SAN">SAN</option>
+</select> <br>
+<label>Enter Your Flight No.
+<input type="number" min="10" max="9999" name="flightNo">
+</label> <br>
+<label> Departure
+    <input type="date" name="departs">
+</label>
+<button type="submit">Render Ticket</button>
+
+</form>
+
+
+
+<%- include('../partials/footer.ejs') %>
